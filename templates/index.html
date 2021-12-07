@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>NFL Data Table</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cerulean/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../static/logic.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Orbitron">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css">
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"></script>
+    
+    <style>
+      body,h1,h2,h3,h4,h5,h6 {font-family: "Orbitron", sans-serif}
+      body {font: size 14px;}
+      .w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+      .w3-half img:hover{opacity:1}
+    </style>
+</head>
+<!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">NFL Stats</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+        <div class="collapse navbar-collapse" id="navbarColor01">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="/">Home
+                  <span class="visually-hidden"></span>
+                </a>
+      </nav>
+      <div class="container-fluid">
+        <div class="row text-center" style="margin-top:2%">
+            <div class="col-md-12">
+                <h4 class="display-4">NFL Statistics</h4>
+        </div>
+    </div>
+  </div>
+  <div class="col-md-12">
+    <button type="button" class="btn btn-primary" id="search">Search</button>
+</div>
+  <div class="form-group">
+    <label class="col-form-label" for="position">Position</label>
+    <select id="position">
+        <option value="qb_">Quarterback</option>
+        <option value="rb_">Runningback</option>
+
+    </select>
+</div>
+<div class="form-group">
+  <label class="col-form-label" for="year">Year</label>
+  <select id="year">
+      <option value="2020">2020</option>
+      <option value="2019">2019</option>
+      <option value="2018">2018</option>
+
+  </select>
+</div>
+  </div>
+  <div class="row" style="margin-top:2%">
+      <div class="col-sm-2"></div>
+      <div class="col-md-8" id="output">
+          <!-- <table id="table_id" class="display">
+
+          </table> -->
+          
+          {{results}}
+      </div>
+      <div class="col-sm-2"></div>
+  </div>
+</html>

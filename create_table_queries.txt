@@ -1,0 +1,151 @@
+Create table qb_2020(
+ranking int,
+player_name varchar(50),
+completions int,
+attempts int,
+completion_percentage float,
+passing_yards varchar(50),
+yards_per_attempt float,
+touchdowns int,
+interceptions int,
+sacks int,
+rushing_attempts int,
+rushing_yards varchar(50),
+rushing_touchdowns int,
+fumbles int,
+games int,
+fantasy_points float,
+fantasy_points_per_game float,
+owned_percentage varchar(30),
+	
+CONSTRAINT "pk_qb_2020" PRIMARY KEY (
+	"player_name"
+ )
+);
+
+
+Create table qb_2019(
+ranking int,
+player_name varchar(50),
+completions int,
+attempts int,
+completion_percentage float,
+passing_yards varchar(50),
+yards_per_attempt float,
+touchdowns int,
+interceptions int,
+sacks int,
+rushing_attempts int,
+rushing_yards varchar(50),
+rushing_touchdowns int,
+fumbles int,
+games int,
+fantasy_points float,
+fantasy_points_per_game float,
+owned_percentage varchar(30),
+	
+CONSTRAINT "pk_qb_2019" PRIMARY KEY (
+	"player_name"
+ )
+);
+
+
+Create table qb_2018(
+ranking int,
+player_name varchar(50),
+completions int,
+attempts int,
+completion_percentage float,
+passing_yards varchar(50),
+yards_per_attempt float,
+touchdowns int,
+interceptions int,
+sacks int,
+rushing_attempts int,
+rushing_yards varchar(50),
+rushing_touchdowns int,
+fumbles int,
+games int,
+fantasy_points float,
+fantasy_points_per_game float,
+owned_percentage varchar(30),
+	
+CONSTRAINT "pk_qb_2018" PRIMARY KEY (
+	"player_name"
+ )
+);
+
+Create table rb_2020(
+ranking int,
+player_name varchar(50),
+attempts int,
+yards varchar(50),
+yards_per_attempt float,
+longest_run int,
+runs_twenty_plus int,
+touchdowns int,
+receptions int,
+targets int,
+receiving_yards int,
+yards_per_reception float,
+receiving_touchdowns int,
+fumbles int,
+games int,
+fantasy_points float,
+fantasy_points_per_game float,
+owned_percentage varchar(30),
+	
+CONSTRAINT "pk_rb_2020" PRIMARY KEY (
+	"player_name"
+ )
+);
+
+Create table rb_2019(
+ranking int,
+player_name varchar(50),
+attempts int,
+yards varchar(50),
+yards_per_attempt float,
+longest_run int,
+runs_twenty_plus int,
+touchdowns int,
+receptions int,
+targets int,
+receiving_yards int,
+yards_per_reception float,
+receiving_touchdowns int,
+fumbles int,
+games int,
+fantasy_points float,
+fantasy_points_per_game float,
+owned_percentage varchar(30),
+	
+CONSTRAINT "pk_rb_2019" PRIMARY KEY (
+	"player_name"
+ )
+);
+
+Create table rb_2018(
+ranking int,
+player_name varchar(50),
+attempts int,
+yards varchar(50),
+yards_per_attempt float,
+longest_run int,
+runs_twenty_plus int,
+touchdowns int,
+receptions int,
+targets int,
+receiving_yards int,
+yards_per_reception float,
+receiving_touchdowns int,
+fumbles int,
+games int,
+fantasy_points float,
+fantasy_points_per_game float,
+owned_percentage varchar(30),
+	
+CONSTRAINT "pk_rb_2018" PRIMARY KEY (
+	"player_name"
+ )
+);
